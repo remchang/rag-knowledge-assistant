@@ -1,0 +1,36 @@
+# 依赖 —— 按本机 pip freeze 的实际结果写死版本
+#
+# ★ 重要说明：这份清单**故意装得很少**。
+#   本机未安装 torch / transformers / sentence-transformers / faiss-cpu
+#   （合计数 GB，本机网络实测约 100 KB/s，下载会浪费大量时间）。
+#   所以实际运行走的是：
+#     · 嵌入后端 = zihouduan（纯 numpy 字符 n-gram + TF-IDF）
+#     · 生成模式 = zhengju_zhaiyao（证据抽取降级，不调用大模型）
+#   真实路线的代码（BgeHouduan / BendiMoxing / FaissSuoyin）都已写好，
+#   装上下面的可选依赖后会自动优先使用。
+
+# ---- 实际安装并实测通过的 ----
+numpy==2.5.3          # 后备嵌入后端与 numpy 精确检索
+pypdf==6.19.0         # PDF 文本抽取
+pytest==9.1.1         # 测试
+colorama==0.4.6
+iniconfig==2.3.0
+packaging==26.3
+pluggy==1.6.0
+Pygments==2.21.0
+
+# ---- 可选：跑真实模型需要自己装（本机未装）----
+# streamlit==1.64.0                 # Web 界面
+# sentence-transformers==5.2.0      # BGE 嵌入
+# faiss-cpu==1.13.2                 # 向量索引（不装则用 numpy 精确检索）
+# transformers==4.57.6              # Qwen 本地生成
+# torch==2.14.0                     # 上述两个都依赖它（CPU 版即可）
+# huggingface_hub                   # 下载模型（scripts/xiazai-moxing.ps1 用）
+#
+# 安装命令（国内镜像）：
+#   .\.venv\Scripts\python -m pip install streamlit sentence-transformers faiss-cpu `
+#     transformers torch -i https://mirrors.aliyun.com/pypi/simple/
+#
+# 装完后重新建库并跑评测：
+#   .\scripts\jianku.ps1
+#   .\scripts\pingce.ps1

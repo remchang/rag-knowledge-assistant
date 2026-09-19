@@ -1,0 +1,39 @@
+# ---- Python ----
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+pip*.txt
+*.log
+
+# ---- 模型缓存（体积大，用下载脚本重建）----
+# 真实模型（BGE / Qwen）有几 GB，绝不入库。
+# 重建方式： scripts\xiazai-moxing.ps1
+models/
+*.safetensors
+*.bin
+*.gguf
+
+# ---- 索引与向量 ----
+# 这份索引只有 500 多 KB（5 篇文档、几十个块），所以**入库**，
+# 这样别人克隆下来直接就能提问，不用先建库。
+# 如果换成真实大语料（几百 MB），就应该改成不入库、只提供重建脚本。
+# 生产环境的做法通常是：索引放对象存储，仓库里只留元数据和重建脚本。
+storage/index.faiss
+storage/index.pkl
+storage/index.npz.bak
+uploads/
+
+# ---- 上传的文档 ----
+# data\ 里的课程文档**要**入库（是交付物，也是评测集的基础）。
+# 但用户运行时上传的文档放在 uploads\，属于运行态，不入库。
+uploads/
+
+# ---- HuggingFace 缓存 ----
+.cache/
+huggingface/
+
+# ---- 凭据 ----
+.env
+*.key
+*.pem
