@@ -1,0 +1,122 @@
+{
+  "shuoming": "实验05 检索评测集：20 题，其中 4 题为知识库外（ku_wai=true，应拒答）。每题的 biaozhi 是能唯一定位到原文的标准证据短句（必须使用文档中的原话子串）。至少有 5 题包含多个标准证据块。",
+  "wenti_liebiao": [
+    {
+      "wenti": "MIT 许可证对商业使用有什么限制？",
+      "biaozhi": ["MIT 许可证是一种宽松许可证，要求保留版权声明和许可声明，对商业使用几乎没有任何限制。"],
+      "ku_wai": false
+    },
+    {
+      "wenti": "Apache-2.0 相比 MIT 额外提供了什么条款？",
+      "biaozhi": ["Apache-2.0 许可证同样允许商业使用，但额外提供了专利授权条款，并要求修改文件时注明变更。"],
+      "ku_wai": false
+    },
+    {
+      "wenti": "GPL 许可证的核心要求是什么？",
+      "biaozhi": ["GPL 是强 copyleft 许可证，要求基于 GPL 软件的衍生作品也必须以 GPL 发布。"],
+      "ku_wai": false
+    },
+    {
+      "wenti": "Dockerfile 里的每条指令会产生什么？",
+      "biaozhi": ["Dockerfile 里的每条指令都会生成一个镜像层。"],
+      "ku_wai": false
+    },
+    {
+      "wenti": "git clone 命令的作用是什么？",
+      "biaozhi": ["使用 git clone 可以把远程仓库复制到本地。"],
+      "ku_wai": false
+    },
+    {
+      "wenti": "怎么创建并切换到新的 Git 分支？",
+      "biaozhi": ["git checkout -b 创建并切换到新分支。"],
+      "ku_wai": false
+    },
+    {
+      "wenti": "Git 合并冲突时应该怎么手动处理？",
+      "biaozhi": ["当两个人改了同一处，合并会产生冲突，需要手动编辑标记 <<<<<<< 和 >>>>>>> 之间的内容后再提交。"],
+      "ku_wai": false
+    },
+    {
+      "wenti": "什么是 Pull Request？",
+      "biaozhi": ["在 GitHub 上通常通过 Pull Request 发起合并请求，由维护者评审后再合并，这是一种代码评审机制。"],
+      "ku_wai": false
+    },
+    {
+      "wenti": "为什么 RAG 要控制块数和块大小？",
+      "biaozhi": ["上下文过长会超出模型窗口，因此要控制块数和块大小。"],
+      "ku_wai": false
+    },
+    {
+      "wenti": "RAG 的主要优点和局限是什么？",
+      "biaozhi": ["RAG 能利用私有知识、可解释（能给出出处），但需要维护索引，且检索质量直接决定答案上限。"],
+      "ku_wai": false
+    },
+    {
+      "wenti": "Prometheus 支持哪几种指标类型？",
+      "biaozhi": ["Counter 只增计数器，Gauge 可增可减，Histogram 观察分布，Summary 计算分位数。"],
+      "ku_wai": false
+    },
+    {
+      "wenti": "用 Docker 怎么启动容器并避免数据丢失？",
+      "biaozhi": [
+        "镜像（image）是只读模板，容器（container）是镜像的运行实例。用 docker run 可以从镜像启动一个容器。",
+        "容器停止后内部数据会丢失，需要用卷（volume）或绑定挂载把数据保存到宿主机。"
+      ],
+      "ku_wai": false
+    },
+    {
+      "wenti": "RAG 的整体工作流程是什么？",
+      "biaozhi": [
+        "RAG 是检索增强生成的缩写，先把用户问题去检索相关资料，再把资料喂给大模型生成答案，从而减少幻觉。",
+        "RAG 通常把文档切成分块，用嵌入模型转成向量，存入向量库。查询时把问题也转成向量，按余弦相似度找最相近的块。"
+      ],
+      "ku_wai": false
+    },
+    {
+      "wenti": "从克隆仓库到提交改动，Git 的流程是怎样的？",
+      "biaozhi": [
+        "使用 git clone 可以把远程仓库复制到本地。",
+        "git add 把改动加入暂存区，git commit 提交，git merge 把分支合并回主分支。提交信息应当清晰说明改动目的。"
+      ],
+      "ku_wai": false
+    },
+    {
+      "wenti": "应该如何为项目选择开源许可证？",
+      "biaozhi": [
+        "如果只想让代码被广泛使用，选 MIT；如果担心专利纠纷，选 Apache-2.0；如果要坚持 copyleft，选 GPL。",
+        "MIT 许可证是一种宽松许可证，要求保留版权声明和许可声明，对商业使用几乎没有任何限制。",
+        "Apache-2.0 许可证同样允许商业使用，但额外提供了专利授权条款，并要求修改文件时注明变更。"
+      ],
+      "ku_wai": false
+    },
+    {
+      "wenti": "Prometheus 如何抓取目标并查询指标？",
+      "biaozhi": [
+        "Prometheus 是开源的系统监控与告警工具，采用拉（pull）模型定期抓取暴露的指标。",
+        "在 prometheus.yml 里用 scrape_configs 配置抓取目标，job_name 标识一组目标，static_configs 列出实例地址。",
+        "PromQL 用 rate(http_requests_total[5m]) 计算每秒请求速率，up 指标表示实例是否在线。"
+      ],
+      "ku_wai": false
+    },
+    {
+      "wenti": "今天北京天气怎么样？",
+      "biaozhi": [],
+      "ku_wai": true
+    },
+    {
+      "wenti": "怎么用番茄炒鸡蛋？",
+      "biaozhi": [],
+      "ku_wai": true
+    },
+    {
+      "wenti": "如何养一只猫？",
+      "biaozhi": [],
+      "ku_wai": true
+    },
+    {
+      "wenti": "用 Python 怎么画一个爱心图案？",
+      "biaozhi": [],
+      "ku_wai": true
+    }
+  ]
+}
