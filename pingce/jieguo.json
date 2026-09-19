@@ -1,0 +1,149 @@
+{
+  "recall@1": 0.9792,
+  "recall@3": 1.0,
+  "recall@5": 1.0,
+  "ren_yi_recall@5": 1.0,
+  "wu_hit_rate": 0.0,
+  "wu_total": 4,
+  "ke_huid_a_ti_shu": 16,
+  "pingce_ti_shu": 20,
+  "avg_latency_s": 0.00036,
+  "details": [
+    {
+      "wenti": "MIT 许可证对商业使用有什么限制？",
+      "gold_kuai_shu": 1,
+      "hit5": 1,
+      "recall5": 1.0,
+      "ren_yi5": 1
+    },
+    {
+      "wenti": "Apache-2.0 相比 MIT 额外提供了什么条款？",
+      "gold_kuai_shu": 1,
+      "hit5": 1,
+      "recall5": 1.0,
+      "ren_yi5": 1
+    },
+    {
+      "wenti": "GPL 许可证的核心要求是什么？",
+      "gold_kuai_shu": 1,
+      "hit5": 1,
+      "recall5": 1.0,
+      "ren_yi5": 1
+    },
+    {
+      "wenti": "Dockerfile 里的每条指令会产生什么？",
+      "gold_kuai_shu": 1,
+      "hit5": 1,
+      "recall5": 1.0,
+      "ren_yi5": 1
+    },
+    {
+      "wenti": "git clone 命令的作用是什么？",
+      "gold_kuai_shu": 1,
+      "hit5": 1,
+      "recall5": 1.0,
+      "ren_yi5": 1
+    },
+    {
+      "wenti": "怎么创建并切换到新的 Git 分支？",
+      "gold_kuai_shu": 1,
+      "hit5": 1,
+      "recall5": 1.0,
+      "ren_yi5": 1
+    },
+    {
+      "wenti": "Git 合并冲突时应该怎么手动处理？",
+      "gold_kuai_shu": 1,
+      "hit5": 1,
+      "recall5": 1.0,
+      "ren_yi5": 1
+    },
+    {
+      "wenti": "什么是 Pull Request？",
+      "gold_kuai_shu": 1,
+      "hit5": 1,
+      "recall5": 1.0,
+      "ren_yi5": 1
+    },
+    {
+      "wenti": "为什么 RAG 要控制块数和块大小？",
+      "gold_kuai_shu": 1,
+      "hit5": 1,
+      "recall5": 1.0,
+      "ren_yi5": 1
+    },
+    {
+      "wenti": "RAG 的主要优点和局限是什么？",
+      "gold_kuai_shu": 1,
+      "hit5": 1,
+      "recall5": 1.0,
+      "ren_yi5": 1
+    },
+    {
+      "wenti": "Prometheus 支持哪几种指标类型？",
+      "gold_kuai_shu": 1,
+      "hit5": 1,
+      "recall5": 1.0,
+      "ren_yi5": 1
+    },
+    {
+      "wenti": "用 Docker 怎么启动容器并避免数据丢失？",
+      "gold_kuai_shu": 2,
+      "hit5": 2,
+      "recall5": 1.0,
+      "ren_yi5": 1
+    },
+    {
+      "wenti": "RAG 的整体工作流程是什么？",
+      "gold_kuai_shu": 2,
+      "hit5": 2,
+      "recall5": 1.0,
+      "ren_yi5": 1
+    },
+    {
+      "wenti": "从克隆仓库到提交改动，Git 的流程是怎样的？",
+      "gold_kuai_shu": 2,
+      "hit5": 2,
+      "recall5": 1.0,
+      "ren_yi5": 1
+    },
+    {
+      "wenti": "应该如何为项目选择开源许可证？",
+      "gold_kuai_shu": 3,
+      "hit5": 3,
+      "recall5": 1.0,
+      "ren_yi5": 1
+    },
+    {
+      "wenti": "Prometheus 如何抓取目标并查询指标？",
+      "gold_kuai_shu": 3,
+      "hit5": 3,
+      "recall5": 1.0,
+      "ren_yi5": 1
+    },
+    {
+      "wenti": "今天北京天气怎么样？",
+      "ku_wai": true,
+      "best_score": 0.0139,
+      "candidate": 7
+    },
+    {
+      "wenti": "怎么用番茄炒鸡蛋？",
+      "ku_wai": true,
+      "best_score": 0.0398,
+      "candidate": 7
+    },
+    {
+      "wenti": "如何养一只猫？",
+      "ku_wai": true,
+      "best_score": 0.0862,
+      "candidate": 7
+    },
+    {
+      "wenti": "用 Python 怎么画一个爱心图案？",
+      "ku_wai": true,
+      "best_score": 0.1165,
+      "candidate": 7
+    }
+  ]
+}

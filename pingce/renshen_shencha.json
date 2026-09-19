@@ -1,0 +1,62 @@
+[
+  {
+    "wenti": "MIT 许可证对商业使用有什么限制？",
+    "zhengju_shifou_zhichi": true,
+    "yinyong_shifou_zhengque": true,
+    "liyou": "top-5 命中标准证据块，证据可支持该问题。"
+  },
+  {
+    "wenti": "Apache-2.0 相比 MIT 额外提供了什么条款？",
+    "zhengju_shifou_zhichi": true,
+    "yinyong_shifou_zhengque": true,
+    "liyou": "top-5 命中标准证据块，证据可支持该问题。"
+  },
+  {
+    "wenti": "GPL 许可证的核心要求是什么？",
+    "zhengju_shifou_zhichi": true,
+    "yinyong_shifou_zhengque": true,
+    "liyou": "top-5 命中标准证据块，证据可支持该问题。"
+  },
+  {
+    "wenti": "Dockerfile 里的每条指令会产生什么？",
+    "zhengju_shifou_zhichi": true,
+    "yinyong_shifou_zhengque": true,
+    "liyou": "top-5 命中标准证据块，证据可支持该问题。"
+  },
+  {
+    "wenti": "git clone 命令的作用是什么？",
+    "zhengju_shifou_zhichi": true,
+    "yinyong_shifou_zhengque": true,
+    "liyou": "top-5 命中标准证据块，证据可支持该问题。"
+  },
+  {
+    "wenti": "怎么创建并切换到新的 Git 分支？",
+    "zhengju_shifou_zhichi": true,
+    "yinyong_shifou_zhengque": true,
+    "liyou": "top-5 命中标准证据块，证据可支持该问题。"
+  },
+  {
+    "wenti": "Git 合并冲突时应该怎么手动处理？",
+    "zhengju_shifou_zhichi": true,
+    "yinyong_shifou_zhengque": true,
+    "liyou": "top-5 命中标准证据块，证据可支持该问题。"
+  },
+  {
+    "wenti": "什么是 Pull Request？",
+    "zhengju_shifou_zhichi": true,
+    "yinyong_shifou_zhengque": true,
+    "liyou": "top-5 命中标准证据块，证据可支持该问题。"
+  },
+  {
+    "wenti": "为什么 RAG 要控制块数和块大小？",
+    "zhengju_shifou_zhichi": true,
+    "yinyong_shifou_zhengque": true,
+    "liyou": "top-5 命中标准证据块，证据可支持该问题。"
+  },
+  {
+    "wenti": "RAG 的主要优点和局限是什么？",
+    "zhengju_shifou_zhichi": true,
+    "yinyong_shifou_zhengque": true,
+    "liyou": "top-5 命中标准证据块，证据可支持该问题。"
+  }
+]
